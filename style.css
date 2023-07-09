@@ -64,10 +64,10 @@ body{
 }
 
 
-main{
+section{
+    display: flex;
     max-width: 400px;
     background: var(--Dark-Blue);
-    display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1.5rem;
@@ -76,11 +76,10 @@ main{
 }
 
 
-.rating-state{
-    /* display: none; */
-}
-.tank-you-state{
+.of{
     display: none;
+}
+#tank-you-state{
     align-items: center;
     justify-content: center;
     padding: 3rem 2rem;
@@ -126,6 +125,14 @@ p{
     padding-top: 5px;
 }
 
+.score:hover{
+    background-color:var(--Light-Grey) ;
+    color: white;
+}
+.score.vote:hover{
+    background-color: var(--Orange);
+    color: white;
+}
 
 
 button{
@@ -135,7 +142,14 @@ button{
     background-color: var(--Orange);
     color: white;
     border-radius: 2rem;
+    
     padding: 0.5rem 0 0.25rem 0;
+}
+
+button:hover{
+    color: var(--Orange);
+    background-color: white;
+    cursor: pointer;
 }
 
 .score-show{
@@ -145,8 +159,10 @@ button{
     padding:0.5rem 1.5rem 0.25rem 1.5rem;
 }
 
-
-
+.vote{
+    background-color: var(--Orange);
+    color: white;
+}
 
 
 
