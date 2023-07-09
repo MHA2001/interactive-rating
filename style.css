@@ -1,0 +1,158 @@
+/* css variable */
+:root{
+
+--Orange: hsl(25, 97%, 53%);
+
+
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Grey: hsl(217, 11%, 24%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+
+--ff: 'Overpass', sans-serif;
+--fw-normal:400;
+--fw-bold:700;
+}
+
+/* css reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+/* css general */
+body{
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+    display: grid;
+    place-items: center;
+    padding: 0 5%;
+    font-size: 0.925rem;
+    font-family: var(--ff);
+    font-weight: var(--fw-normal);
+}
+@media (min-width:500px){
+    body{
+        font-size: 1rem;
+    }
+}
+
+
+main{
+    max-width: 400px;
+    background: var(--Dark-Blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    gap:1.5rem;
+}
+
+
+.rating-state{
+    /* display: none; */
+}
+.tank-you-state{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 2rem;
+    gap:2rem;
+    text-align:center
+
+}
+
+.rating-state picture{
+    display: grid;
+    place-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--Dark-Grey);
+    clip-path: circle();
+}
+
+h1{
+    font-size: 1.5rem;
+    color:var(--light-Grey);
+    margin-bottom:-1rem ;
+}
+
+p{
+    color: var(--Medium-Grey);
+}
+
+.scores-group{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.score{
+    color: var(--Medium-Grey);
+    display: grid;
+    place-items: center;
+    background-color:var(--Dark-Grey) ;
+    width: 3em;
+    height: 3em;
+    clip-path: circle();
+    padding-top: 5px;
+}
+
+
+
+button{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    border: none;
+    background-color: var(--Orange);
+    color: white;
+    border-radius: 2rem;
+    padding: 0.5rem 0 0.25rem 0;
+}
+
+.score-show{
+    color: orange;
+    background-color: var(--Dark-Grey);
+    border-radius: 1.5rem;
+    padding:0.5rem 1.5rem 0.25rem 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
